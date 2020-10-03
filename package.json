@@ -1,0 +1,18 @@
+{
+  "name": "minin",
+  "version": "1.0.0",
+  "description": "js app",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html -p 3000 --open",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "andrey <edotov.egor@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
