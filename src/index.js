@@ -1,12 +1,5 @@
-import { templates } from "./action/function";
-import { mass } from "./mass";
 import "../src/styles/main.css";
+import { App } from "./clases/app";
+import { mass } from "./mass";
 
-const main = document.querySelector("#main");
-
-mass.forEach((blocks) => {
-  const toHTML = templates[blocks.type];
-  if (toHTML) {
-    main.insertAdjacentHTML("beforeend", toHTML(blocks));
-  }
-});
+new App(mass).init();
